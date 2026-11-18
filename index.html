@@ -24,15 +24,32 @@ a{color:var(--green)}
 .date{color:var(--muted);font-size:14px}
 nav a{display:inline-block;margin:6px 12px 6px 0}
 footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+/* Ana sayfa */
+.hero{text-align:center;padding:24px 0 8px;background:radial-gradient(ellipse at 50% 0%,rgba(34,197,94,.22),transparent 65%);border-radius:24px}
+.hero img{width:112px;height:112px;border-radius:28px;box-shadow:0 12px 40px rgba(34,197,94,.25)}
+.hero h1{font-size:34px;line-height:1.15;margin:18px 0 10px}
+.hero h1 span{color:var(--green)}
+.hero p{max-width:520px;margin:0 auto 18px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:8px 0 4px}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:12px;padding:10px 16px;font-size:14px}
+.badge small{display:block;color:var(--muted);font-size:11px;line-height:1}
+.badge b{display:block;font-size:15px;line-height:1.3}
+.shots{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:24px 4px 12px;margin:0 -16px;padding-left:16px;padding-right:16px}
+.shots figure{flex:0 0 220px;margin:0;scroll-snap-align:center;text-align:center}
+.shots img{width:220px;border-radius:24px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.shots figcaption{color:var(--muted);font-size:14px;margin-top:8px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px}
+.features .card{margin:0}
+.features h3{margin:0 0 6px;font-size:17px;color:var(--text)}
+.features .ic{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);margin-bottom:6px}
+.note{font-size:14px;text-align:center;margin-top:24px}
+@media (min-width:760px){.shots{justify-content:center;overflow-x:visible}}
 </style>
 </head>
 <body>
 <main>
 <header><a href="./"><img src="./icon.png" alt=""></a><a class="brand" href="./">İlk 11 Arena</a></header>
-<h1>Futbol menajerlik ve tahmin oyunu</h1>
-<p>Haftanın 11'ini kur, penaltı at, maçları tahmin et, arkadaşlarınla düello yap ve liglerde yüksel.</p>
-<p>Puanlar gerçek parayla satılmaz ve gerçek paraya çevrilemez; oyun sadece eğlence içindir.</p>
-
+<section class="hero"><img src="./icon.png" alt="İlk 11 Arena simgesi"><h1>Kadronu kur,<br><span>arenaya çık.</span></h1><p>İlk 11 Arena; futbol menajerliği, penaltı, maç tahmini ve arkadaş düellosunu tek uygulamada buluşturan bir futbol oyunu.</p><div class="badges"><span class="badge"><span><small>Yakında</small><b>Google Play</b></span></span><span class="badge"><span><small>Yakında</small><b>App Store</b></span></span></div></section><div class="shots"><figure><img src="./img/1_kadro.jpg" alt="Haftanın 11'i ekranı" loading="lazy" width="220"><figcaption>Haftanın 11'i</figcaption></figure><figure><img src="./img/2_penalti.jpg" alt="Penaltı ekranı" loading="lazy" width="220"><figcaption>Penaltı</figcaption></figure><figure><img src="./img/4_market.jpg" alt="Market ekranı" loading="lazy" width="220"><figcaption>Market</figcaption></figure></div><h2>Neler var?</h2><div class="features"><div class="card"><div class="ic">KADRO</div><h3>Haftanın 11'i</h3><p>Gerçek oyunculardan 11 kişilik kadronu kur, yedeklerini seç. Hafta sonunda oyuncuların reytingine göre puan topla.</p></div><div class="card"><div class="ic">PENALTI</div><h3>Penaltı</h3><p>Yönü ve gücü sen seç. Alışkanlıklarını öğrenen akıllı kaleciyi alt etmeye çalış.</p></div><div class="card"><div class="ic">TAHMİN</div><h3>Maç tahmini ve kupon</h3><p>Haftanın maçlarına 1, X ya da 2 de. Üç maçlık kuponla puanını katla.</p></div><div class="card"><div class="ic">DÜELLO</div><h3>Arkadaş düellosu</h3><p>Arkadaşına meydan oku: 5 şut, 5 kurtarış. Çok gol atan kazanır.</p></div><div class="card"><div class="ic">LİG</div><h3>Ligler</h3><p>Elmas, Platin, Altın… Her hafta üst lige çık, arkadaşlarınla sıralamada yarış.</p></div><div class="card"><div class="ic">MARKET</div><h3>Görünüş</h3><p>Avatar, çerçeve, saha teması ve isim rengiyle profilini kendine göre süsle.</p></div></div><p class="note">Puanlar gerçek parayla satılmaz ve gerçek paraya çevrilemez; oyun sadece eğlence içindir.</p>
 <footer>
 <nav><a href="./gizlilik/">Gizlilik politikası</a><a href="./hesap-silme/">Hesap silme</a><a href="mailto:destek@ilk11arena.com">destek@ilk11arena.com</a></nav>
 © 2026 İlk 11 Arena
